@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">XueZiApp</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="phoneNumber">手机号</string>
+    <string name="Security_Code">验证码</string>
+    <string name="Edit_PhoneNumber_hint">仅支持中国大陆手机号</string>
+    <string name="Security_Code_hint">请输入验证码</string>
+    <string name="Receive_Security_Code">获取验证码</string>
+    <string name="account">账号</string>
+    <string name="password">密码</string>
+    <string name="Edit_Enter_PhoneNumber">请输入手机号</string>
+    <string name="Edit_Enter_Password">请输入密码</string>
+    <string name="forgetPassword">忘记密码</string>
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/textBlack"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="@string/account" />
+
+        <EditText
+            android:phoneNumber="true"
+            android:paddingRight="100dp"
+            android:singleLine="true"
+            android:textSize="17sp"
+            android:paddingLeft="70dp"
+            android:hint="@string/Edit_Enter_PhoneNumber"
+            android:id="@+id/edit_account"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <Button
+            android:id="@+id/account_clear"
+            android:visibility="invisible"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="right|center"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/clear_text"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/textBlack"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="@string/password" />
+
+        <EditText
+            android:paddingRight="100dp"
+            android:singleLine="true"
+            android:id="@+id/edit_password"
+            android:textSize="17sp"
+            android:hint="@string/Edit_Enter_Password"
+            android:password="true"
+            android:paddingLeft="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <Button
+            android:id="@+id/btn_eye"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="right|center"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/password_hide_eye"
+            />
+        <Button
+            android:id="@+id/password_clear"
+            android:visibility="invisible"
+            android:layout_marginRight="50dp"
+            android:layout_gravity="right|center"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/clear_text"
+            />
+    </FrameLayout>
+    <Button
+        android:id="@+id/btn_login"
+        android:textSize="18sp"
+        android:text="@string/login"
+        android:textColor="@color/textWhite"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/login_initial"
+        />
+    <TextView
+        android:id="@+id/forget_password"
+        android:textColor="@color/colorGreen"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="登录遇到问题"
+        android:gravity="center"
+        />
+
+
+</LinearLayout>
+

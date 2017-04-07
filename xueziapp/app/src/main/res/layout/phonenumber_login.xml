@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/textBlack"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="@string/phoneNumber" />
+
+        <EditText
+            android:phoneNumber="true"
+            android:paddingRight="100dp"
+            android:singleLine="true"
+            android:textSize="17sp"
+            android:paddingLeft="70dp"
+            android:hint="@string/Edit_PhoneNumber_hint"
+            android:id="@+id/edit_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <Button
+            android:layout_marginBottom="10dp"
+            android:id="@+id/phonenumber_clear"
+            android:visibility="invisible"
+            android:layout_marginRight="110dp"
+            android:layout_gravity="right|center"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/clear_text"
+            />
+        <Button
+            android:id="@+id/btn_receive_code"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#7777"
+            android:layout_gravity="right|center"
+            android:text="@string/Receive_Security_Code"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/textBlack"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="@string/Security_Code" />
+
+        <EditText
+            android:paddingRight="100dp"
+            android:singleLine="true"
+            android:id="@+id/edit_security_code"
+            android:textSize="17sp"
+            android:hint="@string/Security_Code_hint"
+            android:paddingLeft="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <Button
+            android:id="@+id/code_clear"
+            android:visibility="invisible"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="right|center"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/clear_text"
+            />
+    </FrameLayout>
+<Button
+    android:id="@+id/btn_login"
+    android:textSize="18sp"
+    android:text="@string/login"
+    android:textColor="@color/textWhite"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+   android:layout_marginLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/login_initial"
+    />
+
+
+</LinearLayout>
