@@ -17,7 +17,7 @@ This is a supermarket APP
 
 I use ViewPager to get this effect of looping picture. Below is the theory of code.
 
-<img src="flower.png" width="1200px"/>
+<img src="flower.png" width="700px"/>
 
 ``` java
   @Override
