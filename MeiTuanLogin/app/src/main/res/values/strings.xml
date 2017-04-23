@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MeiTuanLogin</string>
+    <string name="text_phone">手机号</string>
+    <string name="edit_phone_hint">仅支持中国大陆手机号</string>
+    <string name="btn_receive_code">获取验证码</string>
+    <string name="text_code">验证码</string>
+    <string name="edit_code_hint">请输入验证码</string>
+    <string name="btn_login">登录</string>
+</resources>

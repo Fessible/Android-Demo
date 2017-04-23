@@ -10,6 +10,9 @@ import android.view.View;
 import android.widget.ImageView;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 public class MainActivity extends AppCompatActivity {
     Handler handler=new Handler(){
@@ -110,21 +113,28 @@ public class MainActivity extends AppCompatActivity {
         });}
         //  设置自动播放
         private void autoPlay() {
-            new Thread(){
-                @Override
-                public void run() {
-                    super.run();
 
-                    while(true){
+                   ScheduledExecutorService scheduledExecutorService = Executors.newSingleThreadScheduledExecutor();
+                    scheduledExecutorService.scheduleAtFixedRate(new SlideShowTask(), 1, 4, TimeUnit.SECONDS);
+
+                 /*   while(true){
                         SystemClock.sleep(5000);
                         currentPosition++;
                         handler.sendEmptyMessage(1);
 
-                    }
+                    }*/
                 }
-            }.start();
+
+    private class SlideShowTask implements Runnable {
+        @Override
+        public void run() {
+            synchronized (viewPager) {
+                currentPosition++;
+                handler.sendEmptyMessage(1);
+            }
         }
     }
+}
 
 
 
