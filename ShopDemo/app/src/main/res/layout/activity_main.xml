@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="example.com.shopdemo.MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </android.support.v4.view.ViewPager>
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f2f3f0"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/Bottom_Tab_Style"
+            android:checked="true"
+            android:drawableTop="@drawable/main_home"
+            android:text="进店"
+            android:textSize="10dp" />
+
+        <RadioButton
+            android:id="@+id/rb_market"
+            style="@style/Bottom_Tab_Style"
+            android:drawableTop="@drawable/main_menu"
+            android:text="订单"
+            android:textSize="10dp" />
+
+        <RadioButton
+            android:id="@+id/rb_order"
+            style="@style/Bottom_Tab_Style"
+            android:drawableTop="@drawable/main_personal"
+            android:text="个人"
+            android:textSize="10dp"/>
+
+    </RadioGroup>
+
+
+
+</LinearLayout>
